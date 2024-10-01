@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Mi página web</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="texto.html">Texto</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+                <li><a href="tabla.html">Tabla</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Registro de usuario</h1>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Información personal</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <br />
+
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                    <br />
+
+                    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                    <br />
+
+                    <label>Género:</label>
+                    <br />
+
+                    <input type="radio" id="masculino" name="genero" value="masculino" required>
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="femenino" name="genero" value="femenino">
+                    <label for="femenino">Femenino</label>
+                    <input type="radio" id="otro" name="genero" value="otro">
+                    <label for="otro">Otro</label>
+                </fieldset>
+                <br />
+
+                <fieldset>
+                    <legend>Información de contacto</legend>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                    <br />
+                    <label for="telefono">Número de teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                    <br />
+                    <label for="direccion">Dirección:</label>
+                    <br />
+                    <textarea id="direccion" name="direccion" rows="4" cols="50"></textarea>
+                    <br />
+                </fieldset>
+                <br />
+
+                <fieldset>
+                    <legend>Información de cuenta</legend>
+                    <label for="username">Nombre de usuario:</label>
+                    <input type="text" id="username" name="username" required>
+                    <br />
+                    <label for="passwd">Contraseña:</label>
+                    <input type="password" id="passwd" name="passwd" required>
+                    <br />
+                    <label for="telefono">Confirmar contraseña:</label>
+                    <input type="password" id="confirmar" name="confirmar" required>
+                    <br />
+                </fieldset>
+                <br />
+
+                <fieldset>
+                    <legend>Preferencias</legend>
+                    <label for="color_favorito">Seleccionar un Color Favorito:</label>
+                    <select id="color_favorito" name="color_favorito">
+                        <option value="rojo">Rojo</option>
+                        <option value="azul">Azul</option>
+                        <option value="verde">Verde</option>
+                        <option value="amarillo">Amarillo</option>
+                    </select>
+                    <br />
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">Acepto los Términos y Condiciones</label>
+                    <br />
+                </fieldset>
+                <br />
+
+                <button type="submit">Registrarse</button>
+            </form>
+        </main>
+    </body>
+</html>

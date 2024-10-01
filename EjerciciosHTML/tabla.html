@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Página de tabla</title>
+    <style>
+        table {
+            width: 25%;
+            text-align: left;
+            vertical-align: top;
+            border: 1px solid #000;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="texto.html">Texto</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+            <li><a href="tabla.html">Tabla</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Página de tabla</h1>
+        <table>
+            <caption>Contenido del libro</caption>
+            <colgroup>
+                <col span="1">
+                <col span="1">
+                <col span="1">
+            </colgroup>
+            <thead>
+                <tr>
+                    <tr rowspan="3">Capítulos del libro</tr>
+                </tr>
+                <tr>
+                    <th>Capítulo</th>
+                    <th>Títulos del capítulo</th>
+                    <th>Páginas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">1</td>
+                    <td>Introducción</td>
+                    <td>1 - 5</td>
+                </tr>
+                <tr>
+                    <td>Primeros Pasos</td>
+                    <td>6 - 12</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">2</td>
+                    <td>Conceptos básicos</td>
+                    <td>13 - 20</td>
+                </tr>
+                <tr>
+                    <td>Avanzado</td>
+                    <td>21 - 35</td>
+                </tr>
+                <tr>
+                    <td>Ejemplos prácticos</td>
+                    <td>36 - 45</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Conclusiones</td>
+                    <td>46 - 50</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+
+</html>
